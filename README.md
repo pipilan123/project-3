@@ -56,15 +56,15 @@ pollutants_mean
 }
 pollutantmean("C:/Users/Lenovo/Desktop/Rstudio/specdata", "sulfate", 1:10)
 pollutantmean <- function(directory, pollutant, id= 1:332){
-pollutants = c()                                            #瑷珛绌簐ector鐢ㄦ柤鎺ユ暩鎿�
-filenames = list.files(directory)                           #姝よ檿娌掓湁鐢� full_name鍙冩暩锛屽彧鏈冩湁files name
+pollutants = c()                                            
+filenames = list.files(directory)                          
 for(i in id){
-filepath=paste(directory,"/" ,filenames[i], sep="")       #灏囨獢鍚嶈垏璺緫璨艰捣渚嗭紝瑁芥垚瀹屾暣璺緫fliepath
-data = read.csv(filepath, header = TRUE)                  #璁€鍙栫洰妯欐獢妗堝強鍏秇eader锛屽瓨鑷砫ata
-pollutants = c(pollutants, data[,pollutant])              #灏囨瘡绛嗘暩鎿氬姞闀疯嚦vector涓�,瀛樿嚦pollutants
+filepath=paste(directory,"/" ,filenames[i], sep="")      
+data = read.csv(filepath, header = TRUE)                  
+pollutants = c(pollutants, data[,pollutant])             
 }
-pollutants_mean = mean(pollutants, na.rm=TRUE)              #瑷堢畻涓﹀瓨鑷硃ollutants_mean
-pollutants_mean                                             #鍥炲牨
+pollutants_mean = mean(pollutants, na.rm=TRUE)          
+pollutants_mean                                            
 }
 install.packages("rda")
 install.packages("rda")
@@ -72,173 +72,9 @@ add<- function(x,y){}
 add<- function(x,y){x+y}
 add(2,3)
 pollutantmean <- function(directory, pollutants, id= 1:332){
-pollutants = c()                                            #瑷珛绌簐ector鐢ㄦ柤鎺ユ暩鎿�
-filenames = list.files(directory)                           #姝よ檿娌掓湁鐢� full_name鍙冩暩锛屽彧鏈冩湁files name
-for(i in id){
-filepath=paste(directory,"/" ,filenames[i], sep="")       #灏囨獢鍚嶈垏璺緫璨艰捣渚嗭紝瑁芥垚瀹屾暣璺緫fliepath
-data = read.csv(filepath, header = TRUE)                  #璁€鍙栫洰妯欐獢妗堝強鍏秇eader锛屽瓨鑷砫ata
-pollutants = c(pollutants, data[,pollutant])              #灏囨瘡绛嗘暩鎿氬姞闀疯嚦vector涓�,瀛樿嚦pollutants
-}
-pollutants_mean = mean(pollutants, na.rm=TRUE)              #瑷堢畻涓﹀瓨鑷硃ollutants_mean
-pollutants_mean                                             #鍥炲牨
-}
-pollutantmean("C:/Users/Lenovo/Desktop/Rstudio/specdata", "sulfate", 1:10)
-pollutantmean("C:/Users/Lenovo/Desktop/Rstudio/specdata", "sulfate", 1:10)
-pollutantmean <- function(directory, pollutants, id= 1:332){
-pollutants = c()                                            #瑷珛绌簐ector鐢ㄦ柤鎺ユ暩鎿�
-filenames = list.files(directory)                           #姝よ檿娌掓湁鐢� full_name鍙冩暩锛屽彧鏈冩湁files name
-for(i in id){
-filepath=paste(directory,"/" ,filenames[i], sep="")       #灏囨獢鍚嶈垏璺緫璨艰捣渚嗭紝瑁芥垚瀹屾暣璺緫fliepath
-data = read.csv(filepath, header = TRUE)                  #璁€鍙栫洰妯欐獢妗堝強鍏秇eader锛屽瓨鑷砫ata
-pollutants = c(pollutants, data[,pollutants])              #灏囨瘡绛嗘暩鎿氬姞闀疯嚦vector涓�,瀛樿嚦pollutants
-}
-pollutants_mean = mean(pollutants, na.rm=TRUE)              #瑷堢畻涓﹀瓨鑷硃ollutants_mean
-pollutants_mean                                             #鍥炲牨
-}
-pollutantmean <- function(directory, pollutants, id= 1:332){
-pollutants = c()                                            #瑷珛绌簐ector鐢ㄦ柤鎺ユ暩鎿�
-filenames = list.files(directory)                           #姝よ檿娌掓湁鐢� full_name鍙冩暩锛屽彧鏈冩湁files name
-for(i in id){
-filepath=paste(directory,"/" ,filenames[i], sep="")       #灏囨獢鍚嶈垏璺緫璨艰捣渚嗭紝瑁芥垚瀹屾暣璺緫fliepath
-data = read.csv(filepath, header = TRUE)                  #璁€鍙栫洰妯欐獢妗堝強鍏秇eader锛屽瓨鑷砫ata
-pollutants = c(pollutants, data[,pollutants])              #灏囨瘡绛嗘暩鎿氬姞闀疯嚦vector涓�,瀛樿嚦pollutants
-}
-pollutants_mean = mean(pollutants, na.rm=TRUE)              #瑷堢畻涓﹀瓨鑷硃ollutants_mean
-pollutants_mean                                             #鍥炲牨
-}
-pollutantmean <- function(directory, pollutants, id= 1:332){
-pollutants = c()                                            #瑷珛绌簐ector鐢ㄦ柤鎺ユ暩鎿�
-filenames = list.files(directory)                           #姝よ檿娌掓湁鐢� full_name鍙冩暩锛屽彧鏈冩湁files name
-for(i in id){
-filepath=paste(directory,"/" ,filenames[i], sep="")       #灏囨獢鍚嶈垏璺緫璨艰捣渚嗭紝瑁芥垚瀹屾暣璺緫fliepath
-data = read.csv(filepath, header = TRUE)                  #璁€鍙栫洰妯欐獢妗堝強鍏秇eader锛屽瓨鑷砫ata
-pollutants = c(pollutants, data[,pollutants])              #灏囨瘡绛嗘暩鎿氬姞闀疯嚦vector涓�,瀛樿嚦pollutants
-}
-pollutants_mean = mean(pollutants, na.rm=TRUE)              #瑷堢畻涓﹀瓨鑷硃ollutants_mean
-pollutants_mean                                             #鍥炲牨
-}
-pollutantmean("C:/Users/Lenovo/Desktop/Rstudio/specdata", "sulfate", 1:10)
-pollutantmean("C:/Users/Lenovo/Desktop/Rstudio/specdata", "sulfate", 1:10)
-pollutantmean <- function(directory,pollutant,id = 1:332) {
-CSV_files_dir <- list.files(directory, full.names = T)  #灏囪尣鐩鏂欏ぞ涓殑files锛屽尟鎴恖ist
-dataf <-data.frame()
-for(i in id){
-dataf <- rbind(dataf,read.csv(CSV_files_dir[i]))      #rbind灏噁or杩村湀鐨勮硣鏂欑秮鎴愭柊row
-}
-mean(dataf[,pollutant],na.rm = T)                       #鎵€鏈塺ow鐨� 鎸囧畾column鍋氳▓绠�
-}
-pollutantmean("C:/Users/Lenovo/Desktop/Rstudio/specdata", "sulfate", 1:10)
-pollutantmean("specdata", "nitrate", 70:72)
-pollutantmean("C:/Users/Lenovo/Desktop/Rstudio/specdata", "nitrate", 70:72)
-pollutantmean("C:/Users/Lenovo/Desktop/Rstudio/specdata", "sulfate", 34)
-pollutantmean("C:/Users/Lenovo/Desktop/Rstudio/specdata", "nitrate")
-complete<- function(directory,id=1:332){
-CSV_files <- list.files(directory, full.names = T)  #灏囪尣鐩鏂欏ぞ涓殑files锛屽尟鎴恖ist
-dataf <-data.frame()
-for(i in id){
-moni_i <- read.csv(CSV_files[i])
-nobs <- sum(complete.cases(moni_i))      #complete.cases()鍙緱鏄惁鐐篶omplete鐨勯倧杓痸ector锛宻um()鍔犵附True鍊�
-tmpdf <- data.frame(i, nobs)             #灏囨脯绔橧D鍙婂叾绲愭灉瀛樻垚 df
-datadf <- rbind(datadf, tmpdf)           #灏囨柊鐨勮硣鏂欑秮鑷虫柊row
-}
-colnames(datadf) <- c("id", "nobs")
-datadf
-}
-cc <- complete("C:/Users/Lenovo/Desktop/Rstudio/specdata", c(6, 10, 20, 34, 100, 200, 310))   #cc5涓湁"id" "nobs" 鍏ヽolumns
-print(cc$nobs)
-complete<- function(directory,id=1:332){
-CSV_files <- list.files(directory, full.names = T)  #灏囪尣鐩鏂欏ぞ涓殑files锛屽尟鎴恖ist
-dataf <-data.frame()
-for(i in id){
-moni_i <- read.csv(CSV_files[i])
-nobs <- sum(complete.cases(moni_i))      #complete.cases()鍙緱鏄惁鐐篶omplete鐨勯倧杓痸ector锛宻um()鍔犵附True鍊�
-tmpdf <- data.frame(i, nobs)             #灏囨脯绔橧D鍙婂叾绲愭灉瀛樻垚 df
-datadf <- rbind(datadf, tmpdf)           #灏囨柊鐨勮硣鏂欑秮鑷虫柊row
-}
-colnames(datadf) <- c("id", "nobs")
-datadf
-}
-cc <- complete("specdata", c(6, 10, 20, 34, 100, 200, 310))   #cc5涓湁"id" "nobs" 鍏ヽolumns
-print(cc$nobs)
-complete<- function(directory,id=1:332){
-CSV_files <- list.files(directory, full.names = T)  #灏囪尣鐩鏂欏ぞ涓殑files锛屽尟鎴恖ist
-dataf <-data.frame()
-for(i in id){
-moni_i <- read.csv(CSV_files[i])
-nobs <- sum(complete.cases(moni_i))      #complete.cases()鍙緱鏄惁鐐篶omplete鐨勯倧杓痸ector锛宻um()鍔犵附True鍊�
-tmpdf <- data.frame(i, nobs)             #灏囨脯绔橧D鍙婂叾绲愭灉瀛樻垚 df
-datadf <- rbind(datadf, tmpdf)           #灏囨柊鐨勮硣鏂欑秮鑷虫柊row
-}
-colnames(datadf) <- c("id", "nobs")
-datadf
-}
-cc <- complete("C:/Users/Lenovo/Desktop/Rstudio/specdata", c(6, 10, 20, 34, 100, 200, 310))   #cc5涓湁"id" "nobs" 鍏ヽolumns
-print(cc$nobs)
-complete<- function(directory,id=1:332){
-CSV_files <- list.files(directory, full.names = T)  #灏囪尣鐩鏂欏ぞ涓殑files锛屽尟鎴恖ist
-dataf <-data.frame()
-for(i in id){
-moni_i <- read.csv(CSV_files[i])
-nobs <- sum(complete.cases(moni_i))      #complete.cases()鍙緱鏄惁鐐篶omplete鐨勯倧杓痸ector锛宻um()鍔犵附True鍊�
-tmpdf <- data.frame(i, nobs)             #灏囨脯绔橧D鍙婂叾绲愭灉瀛樻垚 df
-#灏囨柊鐨勮硣鏂欑秮鑷虫柊row
-}
-colnames(tmpdf) <- c("id", "nobs")
-tmpdf
-}
-cc <- complete("C:/Users/Lenovo/Desktop/Rstudio/specdata", c(6, 10, 20, 34, 100, 200, 310))   #cc5涓湁"id" "nobs" 鍏ヽolumns
-print(cc$nobs)
-complete<- function(directory,id=1:332){
-CSV_files <- list.files(directory, full.names = T)  #灏囪尣鐩鏂欏ぞ涓殑files锛屽尟鎴恖ist
-dataf <-data.frame()
-for(i in id){
-moni_i <- read.csv(CSV_files[i])
-nobs <- sum(complete.cases(moni_i))      #complete.cases()鍙緱鏄惁鐐篶omplete鐨勯倧杓痸ector锛宻um()鍔犵附True鍊�
-tmpdf <- data.frame(i, nobs)             #灏囨脯绔橧D鍙婂叾绲愭灉瀛樻垚 df
-datadff <- rbind(datadf, tmpdf)          #灏囨柊鐨勮硣鏂欑秮鑷虫柊row
-}
-colnames(dataff) <- c("id", "nobs")
-dataff
-}
-cc <- complete("C:/Users/Lenovo/Desktop/Rstudio/specdata", c(6, 10, 20, 34, 100, 200, 310))   #cc5涓湁"id" "nobs" 鍏ヽolumns
-print(cc$nobs)
-complete<- function(directory,id=1:332){
-CSV_files <- list.files(directory, full.names = T)  #灏囪尣鐩鏂欏ぞ涓殑files锛屽尟鎴恖ist
-dataf <-data.frame()
-for(i in id){
-moni_i <- read.csv(CSV_files[i])
-nobs <- sum(complete.cases(moni_i))      #complete.cases()鍙緱鏄惁鐐篶omplete鐨勯倧杓痸ector锛宻um()鍔犵附True鍊�
-tmpdf <- data.frame(i, nobs)             #灏囨脯绔橧D鍙婂叾绲愭灉瀛樻垚 df
-datadff <- rbind(datadf, tmpdf)          #灏囨柊鐨勮硣鏂欑秮鑷虫柊row
-}
-colnames(dataff) <- c("id", "nobs")
-dataff
-}
-cc <- complete("specdata", 54)                               #cc涓湁"id" "nobs" 鍏ヽolumns
-print(cc$nobs)                                               #nobs鐨� vector
-complete<- function(directory,id=1:332){
-CSV_files <- list.files(directory, full.names = T)  #灏囪尣鐩鏂欏ぞ涓殑files锛屽尟鎴恖ist
-dataf <-data.frame()
-for(i in id){
-moni_i <- read.csv(CSV_files[i])
-nobs <- sum(complete.cases(moni_i))      #complete.cases()鍙緱鏄惁鐐篶omplete鐨勯倧杓痸ector锛宻um()鍔犵附True鍊�
-tmpdf <- data.frame(i, nobs)             #灏囨脯绔橧D鍙婂叾绲愭灉瀛樻垚 df
-datadff <- rbind(datadf, tmpdf)          #灏囨柊鐨勮硣鏂欑秮鑷虫柊row
-}
-colnames(dataff) <- c("id", "nobs")
-dataff
-}
-cc <- complete("C:/Users/Lenovo/Desktop/Rstudio/specdata", 54)                               #cc涓湁"id" "nobs" 鍏ヽolumns
-print(cc$nobs)                                               #nobs鐨� vector
-complete<- function(directory,id=1:332){
-CSV_files <- list.files(directory, full.names = T)  #灏囪尣鐩鏂欏ぞ涓殑files锛屽尟鎴恖ist
-dataf <-data.frame()
-for(i in id){
-moni_i <- read.csv(CSV_files[i])
-nobs <- sum(complete.cases(moni_i))      #complete.cases()鍙緱鏄惁鐐篶omplete鐨勯倧杓痸ector锛宻um()鍔犵附True鍊�
-tmpdf <- data.frame(i, nobs)             #灏囨脯绔橧D鍙婂叾绲愭灉瀛樻垚 df
-datadf <- rbind(datadf, tmpdf)          #灏囨柊鐨勮硣鏂欑秮鑷虫柊row
-}
+pollutants = c()                                            
+filenames = list.files(directory)                           
+filepath=paste(directory,"/" ,filenames[i], sep="")     
 colnames(dataf) <- c("id", "nobs")
 dataf
 }
